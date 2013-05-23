@@ -15,4 +15,46 @@ body {
 }
 .book-container ul {
   list-style: none;
+  margin-bottom: 0;
+}
+.book-container button {
+  float: right;
+  margin: 10px;
+}
+
+/*-----------Add book form-----------*/
+#add-book label {
+  width: 100px;
+  margin-right: 10px;
+  text-align: right;
+  line-height: 25px;
+}
+#add-book label, #add-book input {
+  display: block;
+  margin-bottom: 10px;
+  float: left;
+}
+#add-book label[for="title"], #add-book label[for="releaseDate"] {
+  clear: both;
+}
+#add-book button {
+  display: block;
+  margin: 5px 20px 10px 10px;
+  float: right;
+  clear: both;
+}
+#add-book div {
+  width: 680px;
+}
+#add-book div:after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+}
+#books {
+  width: 680px;
 }

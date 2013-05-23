@@ -8,15 +8,17 @@
 </head>
 <body>
   <div id="books">
-    <!-- <div class="book-container">
-      <img src="img/placeholder.png" />
-      <ul>
-        <li>Title</li>
-        <li>Author</li>
-        <li>Release date</li>
-        <li>Keywords</li>
-      </ul>
-    </div> -->
+    <form id="add-book" action="#">
+      <div>
+        <label for="coverImage">CoverImage: </label><input id="coverImage" type="file" />
+        <label for="title">Title: </label><input id="title" placeholder="Title" type="text" />
+        <label for="author">Author: </label><input id="author" placeholder="Author" type="text" />
+        <label for="releaseDate">Release Date: </label><input id="releaseDate" placeholder="Release Date" type="date" />
+        <label for="keywords">Keywords: </label><input id="keywords" placeholder="keywords" type="text" />
+        <button id="add">Add</button>
+      </div>
+    </form>
+
     <script type="text/template" id="book-tmpl">
       <img src="img/<%= coverImage %>" />
       <ul>
@@ -25,6 +27,7 @@
         <li><%= releaseDate %></li>
         <li><%= keywords %></li>
       </ul>
+      <button class="delete">Delete</button>
     </script>
   </div>
 
